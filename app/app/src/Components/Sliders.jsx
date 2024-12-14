@@ -78,29 +78,31 @@ function Sliders() {
       >
         {texts.map((text, index) => (
           <SwiperSlide key={index} className="mx-1.5 sm:mx-2 md:mx-1.5 lg:mx-0">
-            <div className="bg-zinc-900 w-[85vw] sm:w-[85vw] md:w-[40vw] lg:w-[30vw] 2xl:w-[25vw] 
-                          h-[45vh] sm:h-[45vh] md:h-[45vh] lg:h-[45vh] 
-                          flex flex-col justify-center items-start 
-                          p-3 sm:p-4 md:p-6 lg:p-8 
-                          relative rounded-xl">
-              <h1 className="absolute text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 
-                           -mt-[12rem] sm:-mt-[12rem] md:-mt-[12rem] lg:-mt-[10rem]">
-                {text.title}
-                <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl">
-                  {text.subtitle}
-                </span>
-              </h1>
-              <h2 className="mt-2 sm:mt-4 md:mt-6 lg:mt-[6vw] 
-                           text-xs sm:text-sm md:text-[14px] lg:text-[15px] 
-                           w-[70vw] sm:w-[50vw] md:w-[25vw] lg:w-[18vw] xl:w-[13vw] ">
-                {text.para}
-              </h2>
-              <img 
-                src={text.image}
-                alt={`${text.title} image`} 
-                className={`absolute bottom-4 sm:bottom-4 md:bottom-5 lg:bottom-6
+          <div
+            className="bg-zinc-900 w-[85vw] sm:w-[85vw] md:w-[40vw] lg:w-[30vw] 2xl:w-[25vw] 
+                       h-[45vh] sm:h-[45vh] md:h-[45vh] lg:h-[45vh] 
+                       flex flex-col justify-center items-start 
+                       p-3 sm:p-4 md:p-6 lg:p-8 
+                       relative rounded-xl hover:scale-105 transition-transform duration-300 
+                       focus:outline-none focus:ring-4 focus:ring-cyan-300 group">
+            <h1 className="absolute text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 
+                         -mt-[12rem] sm:-mt-[12rem] md:-mt-[12rem] lg:-mt-[10rem]">
+              {text.title}
+              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl">
+                {text.subtitle}
+              </span>
+            </h1>
+            <h2 className="mt-2 sm:mt-4 md:mt-6 lg:mt-[6vw] 
+                         text-xs sm:text-sm md:text-[14px] lg:text-[15px] 
+                         w-[70vw] sm:w-[50vw] md:w-[25vw] lg:w-[18vw] xl:w-[13vw] ">
+              {text.para}
+            </h2>
+            <img 
+              src={text.image}
+              alt={`${text.title} image`} 
+              className={`absolute bottom-4 sm:bottom-4 md:bottom-5 lg:bottom-6 
                           ${index === 1 || index === 2 
-                            ? 'w-[40vw] sm:w-32 md:w-40 lg:w-[15vw] right-2 sm:right-2 md:right-3 lg:right-0 -xl:right-4 '
+                            ? 'w-[40vw] sm:w-32 md:w-40 lg:w-[15vw] right-2 sm:right-2 md:right-3 lg:right-0 xl:right-4 '
                             : index === 6
                             ? 'w-[38vw] sm:w-[24vw] md:w-36 lg:w-[14vw] right-4 sm:right-2 md:right-3 lg:right-0'
                             : index === 3
@@ -110,19 +112,22 @@ function Sliders() {
                             : index === 4
                             ?'w-[29vw] sm:w-[20vw] md:w-36 lg:w-[14vw] xl:w-[12vw] -right-0.5 sm:right-2 md:right-3 lg:left-44 xl:left-52'
                             : 'w-[29vw] sm:w-28 md:w-[15vw] lg:w-[10vw] right-2 sm:right-2 md:right-0 lg:right-4'
-                          }`} 
-              />   
-              <button 
-                className="relative bg-teal-700 
-                         w-[24vw] sm:w-[16vw] md:w-[12vw] lg:w-[8vw] 
-                         h-[4vh] sm:h-[4.5vh] md:h-[5vh] lg:h-[5.5vh] 
-                         top-[2rem] sm:top-[2.5rem] md:top-[2rem] lg:top-[1.5rem] 
-                         p-1 rounded-2xl 
-                         text-[10px] sm:text-[12px] md:text-[14px] lg:text-[17px]">
-                Coming soon  
-              </button>
-            </div>
-          </SwiperSlide>
+                          } 
+                          group-hover:brightness-125 group-hover:drop-shadow-[0_0_15px_rgba(0,255,255,0.7)] 
+                          transition-all duration-300`} 
+            />   
+            <button 
+              className="relative bg-gradient-to-r from-cyan-500 to-[#2D9BB0] 
+                       w-[24vw] sm:w-[16vw] md:w-[12vw] lg:w-[8vw] 
+                       h-[4vh] sm:h-[4.5vh] md:h-[5vh] lg:h-[5.5vh] 
+                       top-[2rem] sm:top-[2.5rem] md:top-[2rem] lg:top-[1.5rem] 
+                       p-1 rounded-2xl 
+                       text-[10px] sm:text-[12px] md:text-[14px] lg:text-[17px]">
+              Coming soon  
+            </button>
+          </div>
+        </SwiperSlide>
+        
         ))}
       </Swiper>
 

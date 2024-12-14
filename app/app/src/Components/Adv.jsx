@@ -64,36 +64,46 @@ function Adv() {
 
       {/* Content Sections */}
       <div className='w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 xl:space-y-16'>
+       
+       
+       
         {/* First Section: Codecraft */}
         <div className='w-full bg-zinc-900 text-white flex flex-col sm:flex-row 
-          rounded-xl border-white border-2 overflow-hidden 
-          min-h-[50vh] sm:min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh]'>
-          <div className='w-full sm:w-1/2 flex flex-col items-center justify-center 
-            p-6 sm:p-8 md:p-10 lg:p-12 text-center sm:text-left'>
-            <h3 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-              mb-4 gradient-text font-bold'>
-              Codecraft
-            </h3>
-            <p className='text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 
-              max-w-md text-center sm:text-left'>
-              Innovative coding solutions that transform your digital landscape with cutting-edge technology.
-            </p>
-          </div>
-          <div className='w-full sm:w-1/2 flex items-center justify-center 
-            p-6 sm:p-8 md:p-10 lg:p-12'>
-            <video 
-              ref={videoRef}
-              src={lappy}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className='object-contain w-full max-w-full max-h-full 
-                rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
-              aria-label="Codecraft demonstration video"
-            />
-          </div>
-        </div>
+  rounded-xl border-white border-2 overflow-hidden 
+  min-h-[50vh] sm:min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh]'>
+  <div className='w-full sm:w-1/2 flex flex-col items-center justify-center 
+    p-6 sm:p-8 md:p-10 lg:p-12 text-center sm:text-left'>
+    <h3 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
+      mb-4 gradient-text font-bold ml-6'>
+      Quiz & Code Arena
+    </h3>
+    <p className='text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 
+      max-w-md text-center sm:text-left'>
+      Practice "Important for you" quiz questions and dive into real-time coding challenges in our immersive environment, enhancing your coding skills seamlessly.
+    </p>
+    <div className='flex gap-4 mt-6 mr-[10vw] '>
+      <button className='relative flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-[#2D9BB0] text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300'>
+        <span className='absolute inset-0 rounded-full bg-cyan-700 blur-md opacity-40'></span>
+        <span className='relative'> Live Quiz</span>
+      </button>
+      <button className='relative flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-[#2D9BB0] text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300'>
+  <span className='absolute inset-0 rounded-full bg-cyan-700 blur-md opacity-40'></span>
+  <span className='relative'>Custom Quiz</span>
+</button> 
+
+    </div>
+  </div>
+  <div className='w-full sm:w-1/2 flex items-center justify-center 
+    p-6 sm:p-8 md:p-10 lg:p-12'>
+    <img 
+      src='https://framerusercontent.com/images/rEoLLNCZHbhwy8WPcryjO63vRYs.png?scale-down-to=1024'
+      className='object-cover w-full sm:w-[40vw] max-w-full max-h-full filter brightness-100
+        rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'
+      aria-label="Codecraft demonstration video"
+    />
+  </div>
+</div>
+
 
         {/* Second Section: Customized Roadmap */}
         {/* <div className='w-full bg-zinc-900 text-white flex flex-col-reverse sm:flex-row 
@@ -124,37 +134,34 @@ function Adv() {
 </div> */}
 
 <div className='w-full bg-zinc-900 text-white flex flex-col-reverse sm:flex-row 
-          rounded-xl border-white border-2 overflow-hidden
-          min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] lg:min-h-[80vh]'>
+  rounded-xl border-white border-2 overflow-hidden
+  min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] lg:min-h-[80vh]'>
   <div className='w-full sm:w-1/2 flex items-center justify-center'>
-    <div className='w-full h-full '>
-    <img 
-  src={roadmap} 
-  alt="Personalized Roadmap" 
-  className='absolute inset-0 object-cover object-left 
-            mt-[166vw] 
-            left-[6vw]
-            w-[88vw] sm:w-[48vw] md:w-[44vw] lg:w-[33vw] h-[30vh]'
-  style={{
-    clipPath:'polygon(0% 100%)',
-  }}
-/>
-
+    <div className='w-full h-full relative '>
+      <img 
+        src={roadmap} 
+        alt="Personalized Roadmap" 
+        className='absolute inset-0 object-cover object-left 
+          w-full sm:w-[48vw] md:w-[44vw] lg:w-[33vw] h-full'
+      />
     </div>
   </div>
   <div className='w-full sm:w-1/2 flex flex-col items-center justify-center 
-            p-6 sm:p-8 md:p-10 lg:p-12 text-center'>
+    p-6 sm:p-8 md:p-10 lg:p-12 text-center'>
     <h3 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-              mb-4 gradient-text font-bold'>
+      mb-4 gradient-text font-bold'>
       Customized Roadmap
     </h3>
     <p className='text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 
-              max-w-md text-center'>
+      max-w-md text-center'>
       Your personalized guide to success, providing a tailored roadmap for your unique journey.
     </p>
+    <button className='relative flex items-center gap-2 px-6 py-2 mt-6 rounded-full bg-gradient-to-r from-cyan-500 to-[#2D9BB0] text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300'>
+      <span className='absolute inset-0 rounded-full bg-cyan-700 blur-md opacity-40'></span>
+      <span className='relative'> Coming Soon</span>
+    </button>
   </div>
 </div>
-
 
       </div>
     </div>

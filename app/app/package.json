@@ -12,8 +12,8 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@fortawesome/fontawesome-free": "^6.6.0",
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.5",
