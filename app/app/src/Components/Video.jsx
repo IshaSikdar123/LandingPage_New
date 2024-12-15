@@ -12,7 +12,7 @@ function Video() {
           Stay updated with our social media posts
         </h2>
 
-        {/* Follow Us Button */}
+        {/* Follow Us Button */}  
         <div className="flex justify-center md:justify-start lg:ml-[15vw] w-full">
           <button className="p-3 mt-6 bg-blue-500 text-white rounded-full hover:bg-blue-800 transition md:ml-4">
             Follow Us
@@ -23,7 +23,7 @@ function Video() {
       {/* Videos Section */}
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 mt-8 px-4 md:px-0">
         {/* First Video */}
-        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh] bg-red-800 rounded-xl overflow-hidden shadow-lg">
+        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh] rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/gtKSQJikzHg"
             frameBorder="0"
@@ -35,7 +35,7 @@ function Video() {
         </div>
 
         {/* Second Video */}
-        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh] bg-blue-800 rounded-xl overflow-hidden shadow-lg">
+        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh] rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/gtKSQJikzHg"
             frameBorder="0"
@@ -47,7 +47,7 @@ function Video() {
         </div>
 
         {/* Third Video */}
-        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh] bg-blue-800 rounded-xl overflow-hidden shadow-lg">
+        <div className="w-full md:w-1/3 max-w-[400px] h-[50vh] md:h-[70vh]  rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/gtKSQJikzHg"
             frameBorder="0"

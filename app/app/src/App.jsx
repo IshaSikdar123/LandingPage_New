@@ -29,6 +29,7 @@ import Courses from './Components/Pages/Courses';
 import Privacy from './Components/Pages/Privacy';
 import Pricing from './Components/Pages/Pricing';
 import Terms from './Components/Pages/Terms';
+import Split from './Components/Split';
 
 function App() {
   useEffect(() => {
@@ -93,10 +94,14 @@ function App() {
                 <div data-aos="fade-up" data-aos-delay="1200">
                   <Video />
                 </div>
-                <div data-aos="fade-up" data-aos-delay="1300">
+                <div data-aos="fade-up" data-aos-delay="1300"> 
+                  <Split />
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1400">
                   <Contact />
                 </div>
                 <Footer />
+               
               </div>
             }
           />

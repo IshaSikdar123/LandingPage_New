@@ -73,15 +73,15 @@ function Adv() {
   min-h-[50vh] sm:min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh]'>
   <div className='w-full sm:w-1/2 flex flex-col items-center justify-center 
     p-6 sm:p-8 md:p-10 lg:p-12 text-center sm:text-left'>
-    <h3 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-      mb-4 gradient-text font-bold ml-6'>
+    <h3 className='text-[30px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
+      mb-4 gradient-text font-bold '>
       Quiz & Code Arena
     </h3>
     <p className='text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 
       max-w-md text-center sm:text-left'>
       Practice "Important for you" quiz questions and dive into real-time coding challenges in our immersive environment, enhancing your coding skills seamlessly.
     </p>
-    <div className='flex gap-4 mt-6 mr-[10vw] '>
+    <div className='flex gap-4 mt-6 sm:mr-[10vw] ml:0 '>
       <button className='relative flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-[#2D9BB0] text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300'>
         <span className='absolute inset-0 rounded-full bg-cyan-700 blur-md opacity-40'></span>
         <span className='relative'> Live Quiz</span>
@@ -133,7 +133,7 @@ function Adv() {
   </div>
 </div> */}
 
-<div className='w-full bg-zinc-900 text-white flex flex-col-reverse sm:flex-row 
+{/* <div className='w-full bg-zinc-900 text-white flex flex-col-reverse sm:flex-row 
   rounded-xl border-white border-2 overflow-hidden
   min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] lg:min-h-[80vh]'>
   <div className='w-full sm:w-1/2 flex items-center justify-center'>
@@ -161,8 +161,37 @@ function Adv() {
       <span className='relative'> Coming Soon</span>
     </button>
   </div>
-</div>
+</div> */}
 
+<div className='w-full bg-zinc-900 text-white flex flex-col sm:flex-row 
+  rounded-xl border-white border-2 overflow-hidden
+  min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] lg:min-h-[80vh]'>
+  <div className='w-full sm:w-1/2 flex items-center justify-center'>
+    <div className='w-full h-full relative'>
+      <img 
+        src={roadmap} 
+        alt="Personalized Roadmap" 
+        className='w-[90vw] h-[50vh] sm:h-full object-cover object-left sm:absolute sm:inset-0 
+          sm:w-[48vw] md:w-[44vw] lg:w-[33vw]'
+      />
+    </div>
+  </div>
+  <div className='w-full sm:w-1/2 flex flex-col items-center justify-center 
+    p-6 sm:p-8 md:p-10 lg:p-12 text-center'>
+    <h3 className='text-xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
+      mb-4 gradient-text font-bold'>
+      Customized Roadmap
+    </h3>
+    <p className='text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 
+      max-w-md text-center'>
+      Your personalized guide to success, providing a tailored roadmap for your unique journey.
+    </p>
+    <button className='relative flex items-center gap-2 px-6 py-2 mt-6 rounded-full bg-gradient-to-r from-cyan-500 to-[#2D9BB0] text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300'>
+      <span className='absolute inset-0 rounded-full bg-cyan-700 blur-md opacity-40'></span>
+      <span className='relative'> Coming Soon</span>
+    </button>
+  </div>
+</div>
       </div>
     </div>
   );
